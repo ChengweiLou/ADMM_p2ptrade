@@ -45,7 +45,7 @@ V_fix = pfresult.bus(:,8);  % node voltage
 
 %% Agent environment
 %--------------------------------------------------------------------------
-[agents, sellers, buyers] = market_info33_newfinal(no, rho);   % market information
+[agents, sellers, buyers] = market_info33_new(no, rho);   % market information
 [centralized_result] = centralized_trading(agents, sellers, buyers, mpc, const);   % centralized_optimization
 %--------------------------------------------------------------------------
 %% ADMM trading process (Custom setting)
